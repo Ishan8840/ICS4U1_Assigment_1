@@ -199,7 +199,7 @@ body {
     align-items: center;
     height: 300px;
     transform: translateX(0);
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .movie-list-item {
@@ -261,7 +261,11 @@ body {
     bottom: 10px;
     left: 50px;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.movie-list-item-button:hover {
+    background-color: gray;
 }
 
 .arrow {
