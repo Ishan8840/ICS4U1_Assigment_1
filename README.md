@@ -6,3 +6,6 @@
 4. signup button/page
 5. feature section, option to see more but you have to sign in 
 6. footer
+
+
+REMOVE SIDEBAR ADD SERACH BAR
