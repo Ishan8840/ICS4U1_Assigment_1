@@ -179,6 +179,106 @@ body {
     background-color: rgb(161, 160, 160);
 }
 
+.feature-list-container {
+    padding: 0 20px;
+}
+
+.titles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.feature-list-title {
+    margin-left: 20px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.feature-list-more {
+    margin-left: 20px;
+    font-size: 18px;
+    color: lightgray;
+}
+
+.feature-list-wrapper {
+    position: relative;
+}
+
+.feature-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    transition: all .5s ease-in-out;
+}
+
+.feature-list-item {
+    position: relative;
+}
+
+.feature-list-item:hover .feature-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.2;
+}
+
+.feature-list-item:hover .feature-list-item-title,
+.feature-list-item:hover .feature-list-item-description,
+.feature-list-item:hover .feature-list-item-button {
+    opacity: 1;
+}
+
+.feature-list-item-img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+    border-radius: 8px;
+}
+
+.feature-list-item-title {
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-list-item-description {
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 200px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-list-item-button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.feature-list-item-button:hover {
+    background-color: gray;
+}
+
 .movie-list-container {
     padding: 0 20px;
 }
