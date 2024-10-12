@@ -148,9 +148,7 @@ body {
 }
 
 .featured-content {
-    height: 50vh;
-    width: auto;
-    padding: 70px;
+    padding: 100px;
 }
 
 .featured-title {
