@@ -15,3 +15,23 @@ arrows.forEach((arrow, i) => {
         }
     });
 });
+
+const arrowUp = document.querySelectorAll(".arrow-up");
+const cover = document.querySelectorAll(".cover-container");
+
+arrowUp.forEach((arrow, i) => {
+    const hasClicked = sessionStorage.getItem(`coverClicked-${i}`);
+
+    if (hasClicked) {
+        cover[i].style.display = "none"; // Hide cover
+    } else {
+        cover[i].style.display = "block"; // Show cover
+    }
+
+    arrow.addEventListener("click", () => {
+        if (!hasClicked) {
+            cover[i].style.transform = `translateY(-100%)`;
+            sessionStorage.setItem(`coverClicked-${i}`, 'true');
+        }
+    });
+});
