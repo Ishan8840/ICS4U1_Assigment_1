@@ -432,7 +432,7 @@ footer {
     left: 0;
     z-index: 9999;
     overflow: hidden;
-    transition: transform .5s ease-in-out;
+    transition: transform .8s ease-in-out;
 }
 
 .cover-slider {
@@ -455,7 +455,7 @@ footer {
     position: absolute;
     left: 17%;
     top: 30%;
-    width: 25vw;
+    width: 300px;
 }
 
 .cover-text {
@@ -481,7 +481,7 @@ footer {
     color: black;
     padding: 10px 20px;
     border-radius: 15px;
-    bottom: calc(20% - 10px);
+    bottom: 30%;
     border: none;
     outline: none;
     font-weight: bold;
@@ -564,7 +564,29 @@ footer {
     }
 
     .cover-title {
-        left: 42%;
+        left: 30%;
+    }
+
+    .cover-button {
+        bottom: 42%;
+    }
+
+    .cover-singin {
+        left: calc(45% + 100px);
+    }
+
+    .cover-singup {
+        left: calc(45% - 65px);
+    }
+}
+
+@media only screen and (max-height: 850px) {
+    .cover-text {
+        display: none;
+    }
+
+    .cover-title {
+        left: 30%;
     }
 
     .cover-button {
