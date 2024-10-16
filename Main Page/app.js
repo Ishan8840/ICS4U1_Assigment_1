@@ -23,9 +23,9 @@ arrowUp.forEach((arrow, i) => {
     const hasClicked = sessionStorage.getItem(`coverClicked-${i}`);
 
     if (hasClicked) {
-        cover[i].style.display = "none"; // Hide cover
+        cover[i].style.display = "none";
     } else {
-        cover[i].style.display = "block"; // Show cover
+        cover[i].style.display = "block";
     }
 
     arrow.addEventListener("click", () => {
